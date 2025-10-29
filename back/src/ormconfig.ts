@@ -12,9 +12,10 @@ export const AppDataSource = new DataSource({
   database: process.env.DB_NAME || 'Mobile_todolist',
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
   migrations: [__dirname + '/migrations/*{.ts,.js}'],
-  synchronize: false, // set true chỉ cho dev
+  synchronize: false, 
   logging: false,
 });
 
 export default AppDataSource;
+
 
