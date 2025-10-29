@@ -8,8 +8,8 @@ export const AppDataSource = new DataSource({
   host: process.env.DB_HOST || 'localhost',
   port: parseInt(process.env.DB_PORT || '3306', 10),
   username: process.env.DB_USER || 'root',
-  password: process.env.DB_PASS || '123456',
-  database: process.env.DB_NAME || 'my_motherfucker_todolist',
+  password: process.env.DB_PASS || 'hien123',
+  database: process.env.DB_NAME || 'Mobile_todolist',
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
   migrations: [__dirname + '/migrations/*{.ts,.js}'],
   synchronize: false, // set true chỉ cho dev
@@ -17,3 +17,4 @@ export const AppDataSource = new DataSource({
 });
 
 export default AppDataSource;
+
